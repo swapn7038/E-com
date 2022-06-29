@@ -119,8 +119,149 @@ p{
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 }
 
 .col-4 img{
     width: 100%;
 }
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+   content: '';
+   background: #ff523b;
+   width: 100px;
+   height: 5px;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+  font-size: 14px;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-10px);
+}
+
+/* offer */
+.offer{
+    background: radial-gradient(#fff, rgb(229, 185, 185));
+    margin-TOP: 80PX;
+    padding: 40px;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+.small{
+    color: #555;
+}
+
+
+/* testimonials */
+
+.testimonials{
+    padding-top: 100px ;
+
+}
+
+.testimonials .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;   
+    transition: 0.5s;     
+
+}
+
+.testimonials .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonials .col-3:hover{
+    transform: translateY(-10px);
+}
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonials .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px ;
+
+}
+
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
