@@ -244,12 +244,132 @@ h4{
     filter: grayscale(0);
 }
 
+
+/* footer */
+
+
 .footer{
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
-    padding: 60px 0;
+    padding: 60px  10px;
 }
+
+
+.footer p{
+    color: #8a8a8a;
+}
+ 
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+
+}
+.footer-col-2  img{
+ width: 180px;
+ margin-bottom: 20PX;
+}
+
+.footer-col-1, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo 
+{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+   display: flex;justify-content: center;
+}
+
+.footer span{
+    color: red;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Media queries for menue */
+
+@media only screen and (max-width: 800px){   /* This code will be only aplicable fro devices of width less than 800px */
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+    }   
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* media queries for less than 600 px */
+
+@media only screen and (max-width: 600px){
+   .row{
+    text-align: center;
+   }
+
+   .col-2, .col-3, .col-4{
+          flex-basis: 100%;
+   }
+} 
+
+
+
+
+
+
 
 
 
